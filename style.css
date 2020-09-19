@@ -159,7 +159,6 @@
 
                     background-color: #1c9e75;
                     color: white;
-                    height: 40vh;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -269,7 +268,7 @@
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.514),rgba(0, 0, 0, 0.37)),url(img/blogHeader.jpg);
     grid-area: HBG;
-    height: 50vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
