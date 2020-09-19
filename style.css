@@ -27,25 +27,7 @@
 
 
 
-            .nav .logo{
-                
-                
-                position: relative;
-                float: left;
-                height: 70px;
-                overflow: hidden;
-                margin-left :20%;
-                margin-top:10px;
-                
-            }
-
-            .logo img{
-                
-                max-width:100%;
-                margin-top:-25px;
-
-            }
-
+       
 
 
      
@@ -65,81 +47,68 @@
                    
                    align-content: center;
                    position: fixed;
-                   background-color:#fff;
+                   background-color:transparent;
                    height: 80px;
-                   padding-right: 0%;
+                   padding-right: 2%;
                    z-index: 2;
-                   box-shadow: 2px 1px 16px -2px #6b6b6b;
+                   
                 }
                 
                 .nav li{ 
                      
-                    padding :20px;
+                    padding :20px 20px 15px 20px;
                     margin:20px 25px 5px 30px;
                     float :right;
                     display: inline-block;
                     position: relative;
+                    
                 
                 }
                 
                 .nav li a{ 
                     text-decoration: none;
-                    color:#0d0d0d ;
-                   
+                    color : white;
                     
                 }
                 
-                .nav li a:hover{ 
-                    color:#1C9E75;
+                .nav li:hover{ 
+                    border-bottom:2px solid #1c9e75;
                     transition: color 0.2s ease-in;
                      
                  }
                 
-                .nav .active a{ 
-                    color:#1C9E75;
+             
+
+
+
+                .nav .logo:hover {
+                     border :none;
+                 }
+                .nav .logo{
+                
+                
+                    position: relative;
+                    float: left;
+                    height: 70px;
+                    overflow: hidden;
+                    margin-left :5%;
+                    margin-top:10px;
+                    font-size: 160%;
                 }
+                .logo span{
+                    color:#1c9e75;
+                }
+    
+                .logo img{
+                    vertical-align: middle;
+                    max-width:100%;
+                    margin-top:-25px;
+    
+                }
+    
                    
 /* sub nav, Dropmenu bar */
 
-                .sub{
-                    width:150%;
-                    overflow: hidden;
-                    position: absolute;
-                    left:-26%;
-                    top: 101%;
-                    background-color:#1c9e75;  
-                    text-align: left;
-                    padding:5px 10px;
-                    min-height:100% ;
-                    z-index: 2;
-                    visibility: hidden;
-                    opacity: 0;
-                   
-                }
-                
-                .sub li:hover a{ 
-                    color :#141414 ;
-                    
-                    transition : color 0.3s ease-in;
-                }
-                
-                
-                
-                .sub li a{ 
-                    text-decoration: none;
-                    color:#fff ;
-                    padding :20px 0px;
-                    margin:0;
-                 
-                    
-                }
-                
-                .nav li:hover .sub{ 
-                    transition :  visibility 0.4s , opacity 0.5s ease-out;
-                    visibility: visible;
-                    opacity: 1;
-                }
-                
 
 
 
@@ -220,15 +189,136 @@
 
 /***************************** index page***************************************/
 
+    /* headr */
+
+    
+        
+        
+
+    .index-header { 
+            max-width:100%;
+            overflow: hidden;
+            position: relative;
+            padding : 0px 0;
+            
+            background: rgb(240, 240, 240);
+            height:100vh;
+            background-image: linear-gradient(#0f0f0f8a, #1f1f1f91),url(img/wallpaper.jpg);
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: bottom;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+        }
+    
+
+
+        .title-box{
+            display: flex;
+            flex-direction: column;
+
+            align-items: center;
+            width:100;
+            z-index: 1;
+            color:#fff;
+            text-align: center;
+            font-size: 160%;
+            
+        }
+        
+        .title-box h1{
+            
+            width:100%;
+            margin-bottom:40px;
+            font-family: 'Spectral', serif;
+            font-weight: 400;
+            
+            
+        }
+    
+        .title-box p{
+            font-family: 'Spectral', serif;
+
+            margin-bottom: 35px;
+            font-weight: bold;
+        }
+
+
+        .btn-explore{
+            color:#ffffff; 
+            text-decoration: none;
+            background-color:#1C9E75;
+            padding:15px 35px;
+            border-radius: 6px;
+        }
+        .btn-explore::before{
+            content: '\003E';
+            
+        }
+
+
+         /* featuer section */
+
+         .feauture_section{
+             display: flex;
+             justify-content: space-around;
+             padding: 60px 0px;
+         }
 
 
 
 
 
+        .box{
+            padding: 40px;
+            margin: 0px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #2b2b2b;
+        }
+        
+
+        
+        .big_icon{
+            display: block; 
+            font-size: 220%;
+            color:#ffffff;
+            margin-bottom: 20px;
+            background-color: #1C9E75;
+            height: 85px;
+            width: 85px;
+            border-radius: 70px;
+            padding: 25px;
+            text-align: center;
+        }
 
 
+        .box_text{
+            margin-top: 35px;
+            font-size: 100%;
+            font-weight: 300;
+            word-spacing: 1px;
+            line-height: 1.5;
+            
+                
+        }
+
+        .feauture_section h3{
+            font-weight: 500;
+            margin-top:10px;
+            font-size: 125%;
+
+            
+        }
+        
 
 
+        
+        /* 2 section */
 
 
 /*****************************the end index page*******************************/
