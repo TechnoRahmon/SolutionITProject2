@@ -1,0 +1,306 @@
+
+/*****************************Common styles for all ***************************************/
+
+
+
+
+
+
+            *{
+                box-sizing: border-box;
+                margin: 0;
+                padding:0;
+                
+            }
+
+
+            body{
+                font-size: 1em;
+                font-family: Tahoma, sans-serif;
+                height: auto;
+                position: relative;
+                width: 100%;
+                margin:0 auto;
+            
+            }
+
+
+
+
+            .nav .logo{
+                
+                
+                position: relative;
+                float: left;
+                height: 70px;
+                overflow: hidden;
+                margin-left :20%;
+                margin-top:10px;
+                
+            }
+
+            .logo img{
+                
+                max-width:100%;
+                margin-top:-25px;
+
+            }
+
+
+
+     
+
+
+
+
+/***************************** End of Common styles for all ***************************************/
+
+
+                /***************************** nav style***********************/
+
+                .nav{
+                    width:100%;   
+                  
+                    font-size: 100%;
+                   
+                   align-content: center;
+                   position: fixed;
+                   background-color:#fff;
+                   height: 80px;
+                   padding-right: 0%;
+                   z-index: 2;
+                   box-shadow: 2px 1px 16px -2px #6b6b6b;
+                }
+                
+                .nav li{ 
+                     
+                    padding :20px;
+                    margin:20px 25px 5px 30px;
+                    float :right;
+                    display: inline-block;
+                    position: relative;
+                
+                }
+                
+                .nav li a{ 
+                    text-decoration: none;
+                    color:#0d0d0d ;
+                   
+                    
+                }
+                
+                .nav li a:hover{ 
+                    color:#1C9E75;
+                    transition: color 0.2s ease-in;
+                     
+                 }
+                
+                .nav .active a{ 
+                    color:#1C9E75;
+                }
+                   
+/* sub nav, Dropmenu bar */
+
+                .sub{
+                    width:150%;
+                    overflow: hidden;
+                    position: absolute;
+                    left:-26%;
+                    top: 101%;
+                    background-color:#1c9e75;  
+                    text-align: left;
+                    padding:5px 10px;
+                    min-height:100% ;
+                    z-index: 2;
+                    visibility: hidden;
+                    opacity: 0;
+                   
+                }
+                
+                .sub li:hover a{ 
+                    color :#141414 ;
+                    
+                    transition : color 0.3s ease-in;
+                }
+                
+                
+                
+                .sub li a{ 
+                    text-decoration: none;
+                    color:#fff ;
+                    padding :20px 0px;
+                    margin:0;
+                 
+                    
+                }
+                
+                .nav li:hover .sub{ 
+                    transition :  visibility 0.4s , opacity 0.5s ease-out;
+                    visibility: visible;
+                    opacity: 1;
+                }
+                
+
+
+
+
+/*****************************the end  nav ******************/
+
+
+
+
+
+
+
+
+/***************************** footer style***********************/
+
+                footer {
+
+                    background-color: #1c9e75;
+                    color: white;
+                }
+                #footer-section {
+                    display: grid;
+                    grid-template-columns: auto auto auto;
+                    padding: 5%;
+                    justify-items: center;
+                }
+                
+                .contact-part h3 {
+                    width: 100%;
+                    
+                    color:#2b2b2b;
+                    margin-bottom: 10%;
+                    font-size: 1.5rem;
+                }
+                .contact-part p {
+                
+                    padding:6% 0px;
+                    margin-bottom: 3%;
+                    font-size: 1.0rem;
+                }
+
+
+
+
+/*****************************the end  footer ******************/
+
+
+
+
+
+
+
+/*****************************the end  common style*******************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************** index page***************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************the end index page*******************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***************************** blog page***************************************/
+
+
+
+
+
+
+
+
+
+
+/*****************************the end blog page*******************************/
+
+
+
+
+
+
+
+/***************************** post page***************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************the end bost page*******************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
