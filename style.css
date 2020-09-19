@@ -159,28 +159,35 @@
 
                     background-color: #1c9e75;
                     color: white;
+                    height: 40vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
                 }
                 #footer-section {
                     display: grid;
-                    grid-template-columns: auto auto auto;
-                    padding: 5%;
-                    justify-items: center;
-                }
-                
-                .contact-part h3 {
-                    width: 100%;
-                    
-                    color:#2b2b2b;
-                    margin-bottom: 10%;
-                    font-size: 1.5rem;
-                }
-                .contact-part p {
-                
-                    padding:6% 0px;
-                    margin-bottom: 3%;
-                    font-size: 1.0rem;
+                    grid-template-columns:repeat(4, 1fr);
+                    grid-template-rows: 1fr 1fr;
+                    row-gap: 3em;  
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 5em;
+                    grid-template-areas:
+                    ". . . ."
+                    "copy copy copy copy";
+            
                 }
 
+                .copy-right {
+                    grid-area: copy;
+                    padding: 1em;
+                    width:20em;
+                }
+                .contact-part {
+                    font-size: 1.8em;
+                }
+                
+              
 
 
 
@@ -246,8 +253,99 @@
 
 /***************************** blog page***************************************/
 
+.wrapper {
+    position: relative;
+    top: 5em;
+    letter-spacing: 1.5px;
+}
 
+#blog-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr;
+    grid-template-areas: "HBG HBG";
+}
+.header-img {
 
+    background-image: linear-gradient(rgba(0, 0, 0, 0.514),rgba(0, 0, 0, 0.37)),url(img/blogHeader.jpg);
+    grid-area: HBG;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-img h1 {
+
+    color: white;
+    font-size: 5em;
+    font-weight: lighter;
+   
+}
+.blog-img1 {
+
+    background-image: url(img/blogImg1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    
+}
+.blog-img2 {
+
+    background-image: url(img/blogImg2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.name-poster {
+
+    font-weight: bolder;
+
+}
+.blog-descriptions {
+    padding: 2em;
+}
+
+.blog-descriptions h1 {
+    font-weight: lighter;
+    margin-bottom: 3em;
+}
+.user-data {
+    margin-bottom: 2em;
+}
+
+.blog-descriptions p {
+    margin-bottom: 3em;
+}
+#description1 {
+    color:  #585858;
+    line-height: 2;
+}
+#description2 {
+    background-color: #585858;
+    color: white;
+    line-height: 2;
+}
+.read-more-btn a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.3em;
+}
+.read-more-btn {
+    width:11em;
+    padding: 1em;
+    margin-top: 2em;
+    background-color:#1c9e75; 
+    border: none;
+}
+
+.read-more-btn:hover {
+
+    background-color: rgb(0, 151, 0);
+}
 
 
 
