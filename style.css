@@ -343,8 +343,6 @@
 /***************************** blog page***************************************/
 
 .wrapper {
-    position: relative;
-    top: 5em;
     letter-spacing: 1.5px;
 }
 
@@ -356,9 +354,9 @@
 }
 .header-img {
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.514),rgba(0, 0, 0, 0.37)),url(img/blogHeader.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.658),rgba(0, 0, 0, 0.589)),url(img/blogHeader.jpg);
     grid-area: HBG;
-    height: 100vh;
+    height: 60vh;
     display: flex;
     justify-content: center;
     align-items: center;
