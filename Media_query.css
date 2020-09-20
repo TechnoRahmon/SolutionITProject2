@@ -488,6 +488,10 @@
     grid-area: blog-header;
 }
 
+.blog-header h1 {
+
+        display: none;
+}
 .blog-content {
     grid-area: blog-content;
     display: grid;
@@ -524,6 +528,9 @@
     grid-template-columns: 1fr;
 }
 
+.post {
+    display: none;
+}
 
 #featuer  {
     grid-area: footer;
@@ -647,6 +654,12 @@
 
 .blog-header {
     grid-area: blog-header;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.blog-header h1 {
+
+        display: none;
 }
 
 .blog-content {
@@ -685,6 +698,9 @@
     grid-template-columns: 1fr;
 }
 
+.post {
+    display: none;
+}
 
 #featuer  {
     grid-area: footer;
