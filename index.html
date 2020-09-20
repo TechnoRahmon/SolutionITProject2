@@ -9,9 +9,16 @@
             <meta name="viewport" content="width=device-width, initial-scale=1">
 
             <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+
             <link rel="stylesheet" href="style.css">
+            <link rel="stylesheet" href="Media_query.css">
             <script src="https://kit.fontawesome.com/5e4e3cd377.js" crossorigin="anonymous"></script>
-            <link rel="icon"  href="img/logo2.png" type="image/png">
+
+            <link rel="icon"  href="img/logo.png" type="image/png">
+
+            <!-----------lightbox css --------------->
+            <link href="css/lightbox.css" rel="stylesheet" />
         </head>
 
     <body>
@@ -30,14 +37,17 @@
             </li>
 
             
+            <div>
+
             
 
-            <li><a href="contact.html">CONTACT US</a> </li>
-            <li><a href="about.html">ABOUT</a></li>
-            <li><a href="#featuer">FRATURE</a></li>
+            <li><a href="#Contact">CONTACT</a> </li>
+            <li><a href="#About">ABOUT</a></li>
+            <li><a href="#Blog">BLOG</a></li>
+            <li><a href="#Projects">PROJECTS</a></li>
             <li><a href="index.html" >HOME</a> </li>
 
-        
+        </div>
 
         </ul>
 <!--end of NAv Bar-->
@@ -71,7 +81,7 @@
  <!-----------section Featuer--------------->
 
 
- <section class="feauture_section" > 
+ <section class="feauture_section" id="About"> 
     
              
             <div class=" box" >
@@ -94,63 +104,73 @@
         
        
 </section>   
-<!-----------end section1--------------->
+<!-----------end featuers--------------->
 
 
-<!-----------section 1--------------->
-    <section class="about-secrtion">
-            <div class="img-box">
 
-            </div>
-            <div secttion-text-box>
 
-                <h3></h3>
-                
-            </div>
 
+
+<!-----------Section About --------------->
+    <section class="about-section">
+        
+        
+        <div class="box-img">
+            <!--about image 1 will be inserted via CSS-->
+        </div>
+
+        <div class="box-txt">
+
+            <h3>What you are looking for</h3>
+
+            <h1>We provide IT solutions</h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, placeat distinctio quisquam provident accusamus cum consequatur fuga incidunt quod eaque! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#" class="btn-explore"> Read More</a>
+
+
+        </div>
 
 
     </section>
+   
+<!-----------end section About--------------->
 
 
 
+<!-----------section Project--------------->
+
+<section class="Projects-section" id="Projects">
+        
+        <div class="proj-text-box">
+            <h3>This is what we do</h3>
+            <h1>Projects case studies Gallery</h1>
+            <p>Green vines attached to the trunk of the tree had wound themselves toward the top of the canopy.</p>
+        </div>
+        
+        <div class="gallery-box">
+            <a href="img/gallery-imgs/1.jpg" data-lightbox="project-img" data-title="Click the right half of the image to move forward."><img src="img/gallery-imgs/1.jpg" alt="photo1" ></a>
+
+            <a href="img/gallery-imgs/2.jpg" data-lightbox="project-img" data-title="Click the right half of the image to move forward."><img src="img/gallery-imgs/2.jpg" alt="photo2" ></a>
+
+            <a href="img/gallery-imgs/3.jpg" data-lightbox="project-img" data-title="Click the right half of the image to move forward."><img src="img/gallery-imgs/3.jpg" alt="photo3" ></a>
+
+            <a href="img/gallery-imgs/4.jpg" data-lightbox="project-img" data-title="Click the right half of the image to move forward."><img src="img/gallery-imgs/4.jpg" alt="photo4" ></a>
 
 
+            <a href="img/gallery-imgs/5.jpg" data-lightbox="project-img" data-title="Click the right half of the image to move forward."><img src="img/gallery-imgs/5.jpg" alt="photo5" ></a>
 
 
+            <a href="img/gallery-imgs/6.jpg" data-lightbox="project-img" data-title="Click the right half of the image to move forward."><img src="img/gallery-imgs/6.jpg" alt="photo6" ></a>
 
 
+            <a href="img/gallery-imgs/7.jpg" data-lightbox="project-img" data-title="Click the right half of the image to move forward."><img src="img/gallery-imgs/7.jpg" alt="photo7" ></a>
 
-    
-<!-----------end section1--------------->
-<!-----------section 1--------------->
-
-
+            <a href="img/gallery-imgs/8.jpg" data-lightbox="project-img" data-title="Click the right half of the image to move forward."><img src="img/gallery-imgs/8.jpg" alt="photo8" ></a>
+        </div>
 
 
-
-
-
-
-
-
-
-    
-<!-----------end section1--------------->
-
-
-
-<!-----------section 2-------------->
-
-
-
-
-
-
-
-
-
-
+</section>
 
 
 
@@ -162,43 +182,172 @@
 
 
 
+<!-----------End section Project--------------->
+
+<!-----------blog section --------------->
+
+<section class="blog-section" id="Blog">
+        
+        
+
+    <div class="box-txt">
+
+        <h3>Sep 19 2020</h3>
+
+        <h1>Blog Post One</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, placeat distinctio quisquam provident accusamus cum consequatur fuga incidunt quod eaque! Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <a href="blog.html" class="btn-explore"> Read More</a>
+
+
+    </div>
+
+    <div class="box-img">
+        <!--about image 1 will be inserted via CSS-->
+    </div>
+
+
+</section>
+  
+<!-----------end blog section--------------->
 
 
 
 
+<!-----------section ourTeam-------------->
 
+<section class="OurTeam-section">
+        
+        
 
-    
-<!-----------end section2--------------->
+    <h2>Our Team</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
+    <div class="OurTeam-img-box">
 
+        
 
-
-<!-----------footer--------------->
-
-        <footer id="featuer">
-            <div id="footer-section">
-                <div class="contact-part">
-                    <h3>Contact</h3>
-                    <p>+123456789</p>
-                    <p>info@email.com</p>
-                </div>
-
-                <div class="contact-part">
-                    <h3>BRANCH OFFICES</h3>
-                    <p>Stockholm - Sweden</p>
-                    
-                </div>
-                <div class="contact-part">
-                    <h3>Legal notices</h3>
-                    <p>Legal warning</p>
-                    <p>Privacy Policy</p>
-                </div>
-              
+       
+            <div class="img-box">
+                <img src="img/Bindu.png" alt="Bindu">
+                <h3>Bindu</h3>
+                <span>President</span>
             </div>
-        </footer>
+            
+     
+
+
+
+
+
+        
+            <div class="img-box">
+                <img src="img/Elyas.png" alt="Elyas">
+                <h3>Elyas</h3>
+                <span>Developer</span>
+            </div>
+            
+        
+            <div class="img-box">
+                <img src="img/Rahmon.png" alt="Rahmon">
+                <h3>Abdulrahman</h3>
+                <span>Developer</span>
+            </div>
+            
+        
+
+    
+
+       
+
+
+    </div>
+
+
+
+</section>
+    
+<!-----------end ourTeam section--------------->
+
+
+
+
+
+<!-----------contact section--------------------->
+
+<section class="contact-section" id="Contact">
+        
+    <div class="box-img">
+        <!--about image 1 will be inserted via CSS-->
+    </div>
+
+
+
+    <div class="contact-box box-text">
+        
+        <h1>Contact Us</h1>
+
+
+              <!--input form -->
+        <form action="#">
+            <input type="text" name="Name" id="name" placeholder="Enter email" required>
+
+            <input type="email" name="email" id="email" placeholder="Enter email" required>
+
+            <input type="tel" name="tel" id="tel" placeholder="Enter phone" pattern="[0-9]{10}">
+            <input type="submit" name="sub" id="sub" value="send">
+
+        </form>
+
+
+    </div>
+
+
+</section>
+
+<!-----------end contact section--------------->
+
+
+
+
+
+
+<!-----------footer---------------------------->
+            <footer id="featuer">
+                <div id="footer-section">
+
+                    <div class="contact-part">
+                        <h3><i class="fab fa-facebook"></i></h3>
+                    </div>
+
+                    <div class="contact-part">
+                        <h3><i class="fab fa-twitter"></i></h3>
+                    </div>
+
+                    <div class="contact-part">
+                        <h3><i class="fab fa-youtube"></i></h3>
+                    </div>
+
+                    <div class="contact-part">
+                        <h3><i class="fab fa-linkedin"></i></h3>
+                    </div>
+
+                    <p class="copy-right">Copyright<i class="far fa-copyright">2020 It-Solution</i></p>
+                </div>
+                
+            </footer>
 <!-----------footer--------------->
 
-    </body>
+
+<!-----------lightbox file and jQuery--------------->
+<script src="js/lightbox-plus-jquery.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="js/smothS.js"></script>
+<!------------------------------------------------->
+
+
+</body>
 
 </html>
