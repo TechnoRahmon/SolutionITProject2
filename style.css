@@ -634,8 +634,14 @@
 #blog-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
+<<<<<<< HEAD
     grid-template-rows:  1fr;
     grid-template-areas: "HBG HBG";
+=======
+    grid-template-rows:1fr;
+    grid-template-areas: "HBG HBG"
+    "blog-area blog-area";
+>>>>>>> 058388a4c9e372bd8e39e86827e5f935017a6b50
 }
 .header-img {
 
@@ -646,7 +652,12 @@
     justify-content: center;
     align-items: center;
 }
-
+.Blog-area {
+    grid-area: blog-area;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
 .header-img h1 {
 
     color: white;
@@ -695,6 +706,7 @@
 #description1 {
     color:  #585858;
     line-height: 2;
+    background-color: rgb(243, 243, 243);
 }
 #description2 {
     background-color: #585858;
