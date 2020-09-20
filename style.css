@@ -631,26 +631,28 @@
 
 /***************************** blog page***************************************/
 
-.gird-blog {
+.grid-blog {
     display:  grid;
     grid-template-columns: 1fr;
-    grid-template-areas: "blog-header" "blog-content" "footer";
+    /*grid-template-areas: "blog-header" "blog-content" "footer"; */
+    grid-template-rows: 1fr 2fr 1fr;
     line-height: 1.4;
     letter-spacing: 2px;
+    height: 100vh;
 }
 
 
 .blog-header {
 
-    grid-area: blog-header;
+   /* grid-area: blog-header; */
     background-image: url("img/blogHeader.jpg");
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 70vh;
 }
 .blog-header h1 {
     color: white;
@@ -660,7 +662,8 @@
 .blog-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows:minmax(70vh ,auto) ;
+    grid-template-rows: 1fr;
+   /* grid-auto-rows:minmax(70vh ,auto) ; */
 }
 
 .blog-img1 {
