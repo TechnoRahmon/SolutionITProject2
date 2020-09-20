@@ -52,6 +52,7 @@
                    height: 80px;
                    padding-right: 2%;
                    z-index: 2;
+                   top:0px;
                    
                 }
                 
@@ -410,6 +411,7 @@
 
         .blog-section .box-img{
             background: url(img/blogHeader.jpg);
+            background-position: center;
         }
 
         /* Projects section */
