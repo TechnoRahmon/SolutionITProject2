@@ -638,7 +638,7 @@
 
 /*** POST *****/
 
-.wrapper-post {
+.wrapper-post{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-areas: "post-header" "post-area" "footer";
@@ -647,18 +647,21 @@
 #post-header {
     grid-area: post-header;
     grid-template-columns: 1fr;
-}
-.posters {
     background-position: center;
 }
+
 .post-area {
-   display: grid;
-   grid-template-columns: 1fr;
+    grid-area: post-area;
+    display: grid;
+    grid-template-columns: 1fr;
 }
+
 
 #featuer  {
     grid-area: footer;
 }
 
+
+/********END *************/
 
 }
