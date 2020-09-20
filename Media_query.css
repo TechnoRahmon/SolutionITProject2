@@ -48,35 +48,94 @@
 
 
 /*481 to 767        this is the requier for Assignment*/ 
-@media only screen and (max-width:767px){
+@media only screen and (max-width:769px){
 
+/***** POST *******/
 
+wrapper-post {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "post-header" "post-area" "footer";
+}
 
+#post-header {
+    grid-area: post-header;
+    grid-template-columns: 1fr;
+}
 
+.posters {
+    background-position: center;
+}
+.post-area {
+   display: grid;
+   grid-template-columns: 1fr;
+}
 
-
-
-
-
-
+#featuer  {
+    grid-area: footer;
 }
 
 
-
-/* 0 to 480 */
-@media only screen and (max-width:480px){
-
-/*============= Blog Page =============*/
+    
+}
 
 
+/*0 to 480        this is the requier for Assignment*/ 
+@media only screen and (max-width:481px){
+
+    /****BLOG *****/
+
+.gird-blog {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "blog-header" "blog-content" "footer";
+}
+
+.blog-header {
+    grid-area: blog-header;
+    grid-template-columns: 1fr;
+    background-position: center;
+}
+
+.blog-content {
+    grid-area: blog-content;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.readBtn {
+    display: block;
+    width: 100%;
+}
+
+#featuer  {
+    grid-area: footer;
+}
 
 
+/*** POST *****/
 
+wrapper-post {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "post-header" "post-area" "footer";
+}
 
+#post-header {
+    grid-area: post-header;
+    grid-template-columns: 1fr;
+}
+.posters {
+    background-position: center;
+}
+.post-area {
+   display: grid;
+   grid-template-columns: 1fr;
+}
 
-
-
-
+#featuer  {
+    grid-area: footer;
+}
 
 
     
