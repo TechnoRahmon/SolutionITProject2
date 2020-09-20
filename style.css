@@ -21,6 +21,7 @@
                 position: relative;
                 width: 100%;
                 margin:0 auto;
+                
             
             }
 
@@ -94,6 +95,7 @@
                     margin-left :5%;
                     margin-top:10px;
                     font-size: 160%;
+                    transition: margin 1s ease-in;
                 }
                 .logo span{
                     color:#1c9e75;
@@ -106,9 +108,16 @@
     
                 }
     
-                   
-/* sub nav, Dropmenu bar */
 
+
+                   
+                /*  scrolled nav  */
+
+                .scrolled{
+                    background-color:#25272cee;
+                    transition: background-color 200ms linear;
+                    
+                }
 
 
 
@@ -126,24 +135,29 @@
 
                 footer {
 
-                    background-color: #1c9e75;
+                    background-color: #12151dee;
                     color: white;
                     display: flex;
                     justify-content: center;
                     align-items: center;
+                  
                 }
+
+
+
                 #footer-section {
                     display: grid;
                     grid-template-columns:repeat(4, 1fr);
                     grid-template-rows: 1fr 1fr;
-                    row-gap: 3em;  
+                    row-gap: 0.5em;  
                     justify-content: center;
                     align-items: center;
-                    margin-top: 5em;
+                    margin: 5em 0em;
                     grid-template-areas:
                     ". . . ."
                     "copy copy copy copy";
-            
+                    text-align: center;
+                    transition: margin 0.8s ease-in;
                 }
 
                 .copy-right {
@@ -151,15 +165,16 @@
                     padding: 1em;
                     width:20em;
                 }
+
                 .contact-part {
                     font-size: 1.8em;
                 }
-                
-              
+
+               
 
 
 
-/*****************************the end  footer ******************/
+                /*****************************the end  footer ******************/
 
 
 
@@ -204,7 +219,7 @@
             background: rgb(240, 240, 240);
             height:100vh;
             background-image: linear-gradient(#0f0f0f8a, #1f1f1f91),url(img/wallpaper.jpg);
-            background-size: 100%;
+            background-size: cover;
             background-repeat: no-repeat;
             background-position: bottom;
             display: flex;
@@ -212,7 +227,7 @@
             justify-content: center;
             
         }
-    
+       
 
 
         .title-box{
@@ -224,7 +239,7 @@
             z-index: 1;
             color:#fff;
             text-align: center;
-            font-size: 160%;
+            font-size: 120%;
             
         }
         
@@ -234,13 +249,13 @@
             margin-bottom:40px;
             font-family: 'Spectral', serif;
             font-weight: 400;
-            
+            font-size: 260%;
             
         }
     
         .title-box p{
             font-family: 'Spectral', serif;
-
+            font-size: 130%;
             margin-bottom: 35px;
             font-weight: bold;
         }
@@ -250,16 +265,24 @@
             color:#ffffff; 
             text-decoration: none;
             background-color:#1C9E75;
-            padding:15px 35px;
+            padding:15px 30px;
             border-radius: 6px;
+            font-size: 110%;
+            font-weight: 300;
+            text-align: center;
         }
         .btn-explore::before{
-            content: '\003E';
+            content: '\229A';
+            font-size: 120%;
+            position: relative;
+            left: -8px;
             
         }
 
-
-         /* featuer section */
+        .btn-explore:hover{ 
+            color:#2b2b2b;
+        }
+/* ************  featuer section *******************/
 
          .feauture_section{
              display: flex;
@@ -311,14 +334,276 @@
             font-weight: 500;
             margin-top:10px;
             font-size: 125%;
-
+            
             
         }
         
 
 
         
-        /* 2 section */
+        /* about section */
+        
+
+
+        .contact-section,.blog-section,.about-section{ 
+            display: flex;
+            width:100%;
+            
+        }
+
+
+
+
+        /*  comman line for both about and blog sections */
+        .box-img{ 
+            display: block;
+            background-image: url(img/aboutImg.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            height: auto;
+            width: 50%;
+            
+            float: left;
+        }
+
+
+        .box-txt{
+            width:50%;
+            padding: 35px;
+            color:  #ffffff;
+            line-height: 2;
+            float:right; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #1c9e75;
+        }
+
+        .box-txt h1{ 
+                font-size: 350%;
+                font-weight: 500;
+                margin-top:15xp;
+        }
+        .box-txt p{ 
+            margin-top:10px;
+            font-size: 120%;
+            line-height: 1.6;
+            
+        }
+
+        .box-txt a{
+            margin-top :25px;
+            width:18%;
+            padding:5px 0px;
+            text-align: center;
+            border:1px solid white;
+        }
+
+        .box-txt a::before{
+            content: '';
+        }
+
+        /* index/ blog section */
+
+        .blog-section .box-img{
+            background: url(img/blogHeader.jpg);
+        }
+
+        /* Projects section */
+
+
+
+        .Projects-section{
+            display: flex;
+            flex-direction: column;
+            margin:50px 0px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .proj-text-box { 
+                color:#3a3a3a;
+                font-size: 140%;
+                margin-bottom: 20px;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                
+        }    
+        
+        .proj-text-box h3{ 
+            
+            
+            margin:30px 0px;
+        }
+        .proj-text-box h1{ 
+            
+            font-size: 260%;
+            font-weight: 300;
+            margin-bottom:40px;
+        }
+        .gallery-box{
+            display: grid;
+            grid-template-columns:repeat(4, 1fr) ;
+            gap: 10px;
+            width:100%;
+            padding:40px;
+            transition: grid-template-columns 1s ease-in;
+            
+        }
+        .gallery-box img{
+            width:100%;
+
+        }
+
+
+
+
+        /* Our Team section */
+
+        .OurTeam-section{ 
+
+            display: flex;
+            padding:60px 40px;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            color:#2b2b2b;
+            font-size: 120%;
+            height: auto;
+            text-align: center;
+            
+        }
+
+
+
+        .OurTeam-section h2{ 
+            font-size: 200%;
+            font-weight: 300;
+            margin-bottom:40px;
+        }
+        .OurTeam-section p{ 
+        margin-bottom:70px;
+        }
+
+
+        .OurTeam-img-box{ 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            width: 100%;
+            text-align: center;
+        }
+        .img-box{ 
+            
+            transition: width 1.2s ease-in;
+            flex:1;
+            padding:20px;
+
+        }
+
+        .img-box img{
+            width:400px;
+            height: auto;
+            max-width: 100%;
+            margin-bottom:10px;
+        }
+
+        .OurTeam-img-box h3{
+           
+           
+            margin-bottom:15px;
+        }
+
+
+
+
+
+        /* Contact section */
+
+
+
+        .contact-section{
+            
+            
+            width:100%;
+        }
+
+
+          .contact-section .box-img{
+            background: url(img/contact.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-size: cover;
+            
+        }
+
+       .contact-box{ 
+           background-color: rgb(238, 238, 238);
+           width:50%;
+           padding:60px;
+           color:#2b2b2b;
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+       }
+
+       .contact-box h1{ 
+           font-size: 400%;
+           font-weight: 400;
+           margin-bottom:50px;
+           color:#3a3a3a;
+    
+       }
+
+       form{ 
+           display: flex;
+            flex-direction: column;
+            width:100%;
+            margin-top:20px;
+            
+       }
+
+        input{ 
+                width:100%;
+                height: 45px;
+                border:none; 
+                padding-left: 7px;
+                margin-bottom: 20px;
+                font-size: 140%;
+                color:#3a3a3a;
+
+        }
+        input[type=text]:focus,input[type=tel]:focus,input[type=email]:focus{
+            border-bottom: 1px solid #1C9E75;
+            background-color: #e8f1ee;
+        }
+
+        input[type=submit]{
+            background-color:#1c9e75;
+            color:#fff;
+            cursor: pointer;
+            margin-top:25px;
+            transition: box-shadow 0.1s ease-in;
+        }
+
+        input[type=submit]:hover { 
+
+            box-shadow: 0px 2px 9px -2px #818181;
+        }
+
+        input:focus{
+            outline: none;
+        }
+
+
+
+
+
 
 
 /*****************************the end index page*******************************/
@@ -349,9 +634,14 @@
 #blog-header {
     display: grid;
     grid-template-columns: 1fr 1fr;
+<<<<<<< HEAD
+    grid-template-rows:  1fr;
+    grid-template-areas: "HBG HBG";
+=======
     grid-template-rows:1fr;
     grid-template-areas: "HBG HBG"
     "blog-area blog-area";
+>>>>>>> 058388a4c9e372bd8e39e86827e5f935017a6b50
 }
 .header-img {
 
