@@ -288,6 +288,58 @@
 
 /*****************************  end index page***************************************/
 
+/******** BLOG *****************/
+
+.grid-blog {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "blog-header" "blog-content" "footer";
+    height: 100vh;
+}
+
+.blog-header {
+    grid-area: blog-header;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.blog-header h1 {
+
+        display: none;
+}
+
+.blog-content {
+    grid-area: blog-content;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "blog-img1" "blog-descr1" "blog-descr2" "blog-img2";
+}
+
+.blog-img1 {
+    grid-area: blog-img1;
+    height: 50vh;
+}
+.blog-descr1 {
+    grid-area: blog-descr1;
+}
+
+.blog-descr2 {
+    grid-area: blog-descr2;
+}
+
+.blog-img2 {
+    grid-area: blog-img2;
+    height: 50vh;
+}
+
+
+.readBtn {
+    display: block;
+    width: 100%;
+}
+
+#featuer  {
+    grid-area: footer;
+}
 
 
 
@@ -496,6 +548,24 @@
     grid-area: blog-content;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-areas: "blog-img1" "blog-descr1" "blog-descr2" "blog-img2";
+}
+
+.blog-img1 {
+    grid-area: blog-img1;
+    height: 40vh;
+}
+.blog-descr1 {
+    grid-area: blog-descr1;
+}
+
+.blog-descr2 {
+    grid-area: blog-descr2;
+}
+
+.blog-img2 {
+    grid-area: blog-img2;
+    height: 40vh;
 }
 
 .readBtn {
@@ -666,7 +736,26 @@
     grid-area: blog-content;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-areas: "blog-img1" "blog-descr1" "blog-descr2" "blog-img2";
 }
+
+.blog-img1 {
+    grid-area: blog-img1;
+    height: 40vh;
+}
+.blog-descr1 {
+    grid-area: blog-descr1;
+}
+
+.blog-descr2 {
+    grid-area: blog-descr2;
+}
+
+.blog-img2 {
+    grid-area: blog-img2;
+    height: 40vh;
+}
+
 
 .readBtn {
     display: block;
